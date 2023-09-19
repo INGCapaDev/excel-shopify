@@ -4,3 +4,11 @@ dist/
 .DS_Store
 coverage/
 .vscode/
+
+// firebase
+serviceAccountKeyDev.ts
+serviceAccountKeyProd.ts
+serviceAccountKey.ts
+serviceAccountKeyDev.json
+serviceAccountKeyProd.json
+serviceAccountKey.json
