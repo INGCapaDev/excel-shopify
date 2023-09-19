@@ -1,7 +1,6 @@
-import express, { Router } from 'express';
+import express from 'express';
 import './utils/handleEnv';
 import cors from 'cors';
-import { handleHTTPError } from './utils/handleError';
 
 export const app = express();
 
@@ -11,8 +10,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // * Here call routes! 🤖
-const router = Router();
-router.use((_, res) => {
-  handleHTTPError(res, 'ERROR_INVALID_ROUTE', 404);
-});
+import { router } from './routes/index.routes';
+// * localhost:PORT/api/----
 app.use('/api', router);
