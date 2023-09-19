@@ -1,7 +1,7 @@
 import express, { Router } from 'express';
-import './utils/handleEnv.ts';
+import './utils/handleEnv';
 import cors from 'cors';
-import { handleHTTPError } from './utils/handleError.js';
+import { handleHTTPError } from './utils/handleError';
 
 export const app = express();
 
